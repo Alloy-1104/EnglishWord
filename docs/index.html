@@ -7,8 +7,9 @@
   <title>英単語を覚えるやつ</title>
 </head>
 <body>
-  <select name="mode" class="list" onchange="viewChange();" id="mode-list" required>
-    <option value="mode" hidden selected>使用するモード</option>
+  <p class="small-title" size=4>使用するモード</p>
+  <select name="mode" onchange="viewChange();" id="mode-list" required>
+    <option value="mode" hidden selected>未選択</option>
     <option value="write-word">英単語を書く</option>
     <option value="select-word">英単語を選ぶ</option>
     <option value="select-mean">意味を選ぶ</option>
@@ -16,19 +17,19 @@
     <option value="memory-mean">意味を暗記する</option>
   </select>
   <div class="settings">
-    <div id="write-word-content" class="setting_content">
+    <div id="write-word-content" class="setting-content">
       <p>英単語を書く</p>
     </div>
-    <div id="select-word-content" class="setting_content">
+    <div id="select-word-content" class="setting-content">
       <p>英単語を選ぶ</p>
     </div>
-    <div id="select-mean-content" class="setting_content">
+    <div id="select-mean-content" class="setting-content">
       <p>意味を選ぶ</p>
     </div>
-    <div id="memory-word-content" class="setting_content">
+    <div id="memory-word-content" class="setting-content">
       <p>単語を暗記する</p>
     </div>
-    <div id="memory-mean-content" class="setting_content">
+    <div id="memory-mean-content" class="setting-content">
       <p>意味を暗記する</p>
     </div>
   </div>

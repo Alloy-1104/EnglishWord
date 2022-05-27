@@ -4,6 +4,12 @@
   --f-color: #333;
 }
 
+* {
+  font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ",
+    Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "ＭＳ Ｐゴシック", sans-serif;
+}
+
 body {
   width: 980px;
 }
@@ -17,14 +23,12 @@ option {
   margin: 10px;
 }
 #mode-list {
-  width: calc(30%);
-  height: 80px;
-  font-size: 30px;
-  font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ",
-    Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
-    "ＭＳ Ｐゴシック", sans-serif;
+  width: calc(40%);
+  height: 100px;
+  font-size: 40px;
+
   font-weight: bold;
-  line-height:calc(100%);
+  line-height: calc(100%);
 }
 .settings {
   width: calc(100%);
@@ -33,6 +37,16 @@ option {
   margin: 10px;
 }
 
-.setting_content {
+.setting-content {
   display: none;
+  color: var(--f-color);
+  font-weight:bold;
+}
+.small-title {
+  font-weight:bold;
+  border-bottom: var(--b-color) 8px solid;
+  width:calc(50%);
+  margin: 10px;
+  padding-bottom:0px;
+  font-size:10px;
 }

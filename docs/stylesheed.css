@@ -16,7 +16,7 @@ option {
   background-color: var(--back-color);
   margin: 10px;
 }
-.list {
+#mode-list {
   width: calc(30%);
   height: 80px;
   font-size: 30px;
@@ -24,6 +24,7 @@ option {
     Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
     "ＭＳ Ｐゴシック", sans-serif;
   font-weight: bold;
+  line-height:calc(100%);
 }
 .settings {
   width: calc(100%);

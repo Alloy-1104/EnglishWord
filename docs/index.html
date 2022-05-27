@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link href="stylesheed.css" rel="stylesheet" type="text/css" media="all">
   <meta charset="UTF-8">
   <title>英単語を覚えるやつ</title>
 </head>
+
 <body>
-  <p class="small-title" size="4">使用するモード</p>
-  <select name="mode" onchange="viewChange();" id="mode-list" required>
-    <option value="mode" hidden selected>未選択</option>
-    <option value="write-word">英単語を書く</option>
-    <option value="select-word">英単語を選ぶ</option>
-    <option value="select-mean">意味を選ぶ</option>
-    <option value="memory-word">単語を暗記する</option>
-    <option value="memory-mean">意味を暗記する</option>
-  </select>
+  <p class="small-title" size="5">使用するモード</p>
+  <div class="list">
+    <select name="mode" onchange="viewChange();" id="mode-list" required>
+      <option value="mode" hidden selected>未選択</option>
+      <option value="write-word">英単語を書く</option>
+      <option value="select-word">英単語を選ぶ</option>
+      <option value="select-mean">意味を選ぶ</option>
+      <option value="memory-word">単語を暗記する</option>
+      <option value="memory-mean">意味を暗記する</option>
+    </select>
+  </div>
   <div class="settings">
     <div id="write-word-content" class="setting-content">
       <p>英単語を書く</p>
@@ -34,4 +38,5 @@
   </div>
   <script src="script.js" type="text/javascript"></script>
 </body>
+
 </html>
